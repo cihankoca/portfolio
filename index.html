@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cihan Koca - Software Engineer & Technical PM</title>
-    <meta name="description" content="CS grad seeking Software Engineer and Technical PM roles. F1 STEM OPT - No sponsorship required.">
-    
+    <meta name="description"
+        content="CS grad seeking Software Engineer and Technical PM roles. F1 STEM OPT - No sponsorship required.">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
         }
-        
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             text-align: center;
             padding: 60px 20px;
@@ -32,65 +34,65 @@
             color: white;
             margin-bottom: 40px;
         }
-        
+
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
         }
-        
+
         .tagline {
             font-size: 1.3em;
             margin-bottom: 20px;
             opacity: 0.95;
         }
-        
+
         .badge {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             padding: 8px 20px;
             border-radius: 25px;
             margin: 5px;
             font-size: 0.9em;
         }
-        
+
         .section {
             margin-bottom: 50px;
         }
-        
+
         h2 {
             color: #667eea;
             margin-bottom: 20px;
             font-size: 1.8em;
         }
-        
+
         .two-column {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             margin-bottom: 30px;
         }
-        
+
         @media (max-width: 768px) {
             .two-column {
                 grid-template-columns: 1fr;
             }
-            
+
             .modal-content {
                 margin: 10% auto;
                 max-width: 95%;
             }
-            
+
             .modal-content img {
                 max-height: 60vh;
             }
-            
+
             .close {
                 top: 10px;
                 right: 15px;
                 font-size: 30px;
             }
         }
-        
+
         .card {
             background: #f8f9fa;
             padding: 0;
@@ -99,51 +101,51 @@
             transition: transform 0.2s;
             overflow: hidden;
         }
-        
+
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .card-header {
             padding: 15px 20px;
             color: white;
             font-size: 1.2em;
             font-weight: bold;
         }
-        
+
         .card-header.findfun {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-        
+
         .card-header.striveforward {
             background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
         }
-        
+
         .card-header.weight {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
-        
+
         .card-header.istanbul {
             background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
         }
-        
+
         .card-content {
             padding: 20px;
         }
-        
+
         .card h3 {
             color: #333;
             margin-bottom: 10px;
         }
-        
+
         .tech-stack {
             color: #666;
             font-size: 0.9em;
             margin: 10px 0;
             font-weight: 600;
         }
-        
+
         .project-img {
             width: 100%;
             height: 200px;
@@ -157,7 +159,7 @@
             font-size: 1.2em;
             font-weight: bold;
         }
-        
+
         .links a {
             display: inline-block;
             padding: 8px 16px;
@@ -170,19 +172,19 @@
             transition: background 0.3s;
             cursor: pointer;
         }
-        
+
         .links a:hover {
             background: #5a67d8;
         }
-        
+
         .screenshot-btn {
             background: #10b981 !important;
         }
-        
+
         .screenshot-btn:hover {
             background: #059669 !important;
         }
-        
+
         /* Modal Styles */
         .modal {
             display: none;
@@ -192,15 +194,20 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.9);
+            background-color: rgba(0, 0, 0, 0.9);
             animation: fadeIn 0.3s;
         }
-        
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
-        
+
         .modal-content {
             position: relative;
             margin: 5% auto;
@@ -208,7 +215,7 @@
             max-height: 80vh;
             text-align: center;
         }
-        
+
         .modal-content img {
             max-width: 100%;
             max-height: 70vh;
@@ -218,7 +225,7 @@
             display: block;
             margin: 0 auto;
         }
-        
+
         .close {
             position: absolute;
             top: 15px;
@@ -228,16 +235,16 @@
             font-weight: bold;
             cursor: pointer;
         }
-        
+
         .close:hover {
             color: #ff6b6b;
         }
-        
+
         .modal-nav {
             text-align: center;
             margin-top: 20px;
         }
-        
+
         .modal-nav button {
             background: #667eea;
             color: white;
@@ -248,31 +255,31 @@
             cursor: pointer;
             font-size: 16px;
         }
-        
+
         .modal-nav button:hover {
             background: #5a67d8;
         }
-        
+
         .modal-caption {
             text-align: center;
             color: white;
             padding: 20px;
             font-size: 1.1em;
         }
-        
+
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
-        
+
         .skill {
             background: #e2e8f0;
             padding: 5px 15px;
             border-radius: 15px;
             font-size: 0.9em;
         }
-        
+
         .cta-section {
             background: #f8f9fa;
             padding: 40px;
@@ -280,15 +287,15 @@
             text-align: center;
             margin-top: 40px;
         }
-        
+
         .cta-section h2 {
             margin-bottom: 15px;
         }
-        
+
         .contact-links {
             margin-top: 20px;
         }
-        
+
         .contact-links a {
             display: inline-block;
             margin: 0 15px;
@@ -299,12 +306,12 @@
             border-radius: 25px;
             transition: all 0.3s;
         }
-        
+
         .contact-links a:hover {
             background: #5a67d8;
             transform: translateY(-2px);
         }
-        
+
         .status {
             background: #10b981;
             color: white;
@@ -314,18 +321,18 @@
             margin: 20px 0;
             font-size: 0.9em;
         }
-        
+
         ul {
             margin-left: 20px;
             margin-top: 10px;
         }
-        
+
         .experience-card {
             border-left: 3px solid #667eea;
             padding-left: 20px;
             margin-bottom: 30px;
         }
-        
+
         .date-range {
             color: #666;
             font-size: 0.9em;
@@ -333,6 +340,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- HERO SECTION -->
     <header>
@@ -344,7 +352,8 @@
             <span class="badge">Technical PM</span>
         </div>
         <div style="margin-top: 20px;">
-            <span class="badge" style="background: rgba(16, 185, 129, 0.9);">✅ F1 STEM OPT • No Sponsorship Required • Available Immediately</span>
+            <span class="badge" style="background: rgba(16, 185, 129, 0.9);">✅ F1 STEM OPT • No Sponsorship Required •
+                Available Immediately</span>
         </div>
     </header>
 
@@ -355,13 +364,19 @@
             <div class="two-column">
                 <div class="card" style="padding: 20px;">
                     <h3>👨‍💻 As a Developer</h3>
-                    <p>CS graduate from SNHU (GPA 3.8) with hands-on experience building production applications. Proficient in multiple programming languages and frameworks, with a focus on mobile and full-stack development.</p>
-                    <p style="margin-top: 10px;"><strong>Core Skills:</strong> C++, Java, Python, JavaScript, TypeScript, React Native, Android Development</p>
+                    <p>CS graduate from SNHU (GPA 3.8) with hands-on experience building production applications.
+                        Proficient in multiple programming languages and frameworks, with a focus on mobile and
+                        full-stack development.</p>
+                    <p style="margin-top: 10px;"><strong>Core Skills:</strong> C++, Java, Python, JavaScript,
+                        TypeScript, React Native, Android Development</p>
                 </div>
                 <div class="card" style="padding: 20px;">
                     <h3>📊 As a Product Builder</h3>
-                    <p>Co-founded StriveForward where I architected a SaaS platform for service businesses. Experienced in rapid prototyping, user research, and translating business needs into technical solutions.</p>
-                    <p style="margin-top: 10px;"><strong>Strengths:</strong> System Design, API Integration, Agile Methodologies, Technical Leadership</p>
+                    <p>Co-founded StriveForward where I architected a SaaS platform for service businesses. Experienced
+                        in rapid prototyping, user research, and translating business needs into technical solutions.
+                    </p>
+                    <p style="margin-top: 10px;"><strong>Strengths:</strong> System Design, API Integration, Agile
+                        Methodologies, Technical Leadership</p>
                 </div>
             </div>
         </section>
@@ -369,11 +384,12 @@
         <!-- EXPERIENCE SECTION -->
         <section class="section">
             <h2>Professional Experience</h2>
-            
+
             <div class="experience-card">
                 <h3>Co-Founder & Full-Stack Developer • StriveForward</h3>
-                <p class="date-range">July 2024 - Present | Portsmouth, NH (Remote)</p>
-                <p>Co-founded and leading development of a multi-tenant SaaS platform for high-volume service businesses.</p>
+                <p class="date-range">May 2024 - Present | Portsmouth, NH (Remote)</p>
+                <p>Co-founded and leading development of a multi-tenant SaaS platform for high-volume service
+                    businesses.</p>
                 <ul>
                     <li>Built pilot solution for LE Glam beauty service using Supabase, Retool, and n8n</li>
                     <li>Developed React 18 dashboards with Zustand, reducing onboarding time by 60%</li>
@@ -382,7 +398,7 @@
                     <li>Engineered PostgreSQL + Node.js backend with JSON-driven workflows</li>
                 </ul>
             </div>
-            
+
             <div class="experience-card">
                 <h3>IT Support Intern • Kiteworks</h3>
                 <p class="date-range">October 2024 - December 2024 | San Mateo, CA</p>
@@ -397,30 +413,9 @@
         <!-- PROJECTS SECTION -->
         <section class="section">
             <h2>Featured Projects</h2>
-            
-            <!-- Project 1: FindFun -->
-            <div class="card">
-                <div class="card-header findfun">
-                    🎯 FindFun - Activity Discovery Platform
-                </div>
-                <div class="card-content">
-                    <p class="tech-stack">React Native • Expo • JavaScript • Figma • Android/iOS</p>
-                    <p class="date-range">Capstone Project | September 2024 - December 2024</p>
-                    <p>Cross-platform mobile app for discovering and planning activities, built with a team using Agile methodology.</p>
-                    <ul>
-                        <li>Designed intuitive UI/UX using Figma for Activity Selection and Results pages</li>
-                        <li>Implemented front-end features with React Native and Expo</li>
-                        <li>Managed tasks using Jira and version control with GitHub</li>
-                        <li>Followed Agile Scrum with sprint planning and backlog management</li>
-                    </ul>
-                    <div class="links">
-                        <a onclick="openModal('findfun')" class="screenshot-btn">📸 View Screenshots</a>
-                        <a href="https://github.com/cihankoca/CS413/tree/main/FindFun" target="_blank">💻 View on GitHub</a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 2: StriveForward -->
+
+            <!-- Project 1: StriveForward -->
             <div class="card">
                 <div class="card-header striveforward">
                     🚀 StriveForward - Service Business Platform
@@ -441,6 +436,34 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <!-- Project 2: FindFun -->
+            <div class="card">
+                <div class="card-header findfun">
+                    🎯 FindFun - Activity Discovery Platform
+                </div>
+                <div class="card-content">
+                    <p class="tech-stack">React Native • Expo • JavaScript • Figma • Android/iOS</p>
+                    <p class="date-range">Capstone Project | September 2024 - December 2024</p>
+                    <p>Cross-platform mobile app for discovering and planning activities, built with a team using Agile
+                        methodology.</p>
+                    <ul>
+                        <li>Designed intuitive UI/UX using Figma for Activity Selection and Results pages</li>
+                        <li>Implemented front-end features with React Native and Expo</li>
+                        <li>Managed tasks using Jira and version control with GitHub</li>
+                        <li>Followed Agile Scrum with sprint planning and backlog management</li>
+                    </ul>
+                    <div class="links">
+                        <a onclick="openModal('findfun')" class="screenshot-btn">📸 View Screenshots</a>
+                        <a href="https://github.com/cihankoca/CS413/tree/main/FindFun" target="_blank">💻 View on
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+
 
             <!-- Project 3: WeightTrackApp -->
             <div class="card">
@@ -471,7 +494,8 @@
                 <div class="card-content">
                     <p class="tech-stack">React Native • Expo Go • Yelp API • Postman</p>
                     <p class="date-range">April 2024</p>
-                    <p>Mobile application for discovering restaurants in Istanbul with advanced filtering capabilities.</p>
+                    <p>Mobile application for discovering restaurants in Istanbul with advanced filtering capabilities.
+                    </p>
                     <ul>
                         <li>Implemented price range filtering (affordable, mid, expensive)</li>
                         <li>Built dish finder feature showing restaurants by specific cuisine</li>
@@ -489,7 +513,7 @@
         <!-- SKILLS SECTION -->
         <section class="section">
             <h2>Technical Skills</h2>
-            
+
             <h3 style="margin-bottom: 15px;">Programming Languages</h3>
             <div class="skills">
                 <span class="skill">C++</span>
@@ -500,7 +524,7 @@
                 <span class="skill">JavaScript</span>
                 <span class="skill">TypeScript</span>
             </div>
-            
+
             <h3 style="margin-top: 30px; margin-bottom: 15px;">Frameworks & Technologies</h3>
             <div class="skills">
                 <span class="skill">React Native</span>
@@ -511,7 +535,7 @@
                 <span class="skill">PostgreSQL</span>
                 <span class="skill">SQLite</span>
             </div>
-            
+
             <h3 style="margin-top: 30px; margin-bottom: 15px;">Tools & Platforms</h3>
             <div class="skills">
                 <span class="skill">GitHub</span>
@@ -542,8 +566,9 @@
             <h2>Let's Build Something Together!</h2>
             <p class="status">🟢 Available Immediately • F1 STEM OPT</p>
             <p style="margin-top: 10px;">Seeking Software Engineer and Technical PM opportunities</p>
-            <p style="color: #666; margin-top: 5px;">Boston • Portsmouth, NH • Portland, ME • Remote • Open to Relocation</p>
-            
+            <p style="color: #666; margin-top: 5px;">Boston • Portsmouth, NH • Portland, ME • Remote • Open to
+                Relocation</p>
+
             <div class="contact-links">
                 <a href="mailto:1cihankoca@gmail.com">📧 Email Me</a>
                 <a href="https://www.linkedin.com/in/cihan-koca-3539a1168/" target="_blank">💼 LinkedIn</a>
@@ -650,27 +675,27 @@
         function changeImage(direction) {
             const projectImages = screenshots[currentProject].images;
             currentImageIndex += direction;
-            
+
             if (currentImageIndex >= projectImages.length) {
                 currentImageIndex = 0;
             }
             if (currentImageIndex < 0) {
                 currentImageIndex = projectImages.length - 1;
             }
-            
+
             updateModalImage();
         }
 
         function updateModalImage() {
             const projectData = screenshots[currentProject];
             document.getElementById('modalImage').src = projectData.images[currentImageIndex];
-            document.getElementById('modalCaption').innerHTML = 
-                projectData.captions[currentImageIndex] + 
+            document.getElementById('modalCaption').innerHTML =
+                projectData.captions[currentImageIndex] +
                 ' <br><small>(' + (currentImageIndex + 1) + ' / ' + projectData.images.length + ')</small>';
         }
 
         // Close modal when clicking outside
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             const modal = document.getElementById('screenshotModal');
             if (event.target == modal) {
                 closeModal();
@@ -678,7 +703,7 @@
         }
 
         // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (document.getElementById('screenshotModal').style.display === 'block') {
                 if (e.key === 'ArrowLeft') changeImage(-1);
                 if (e.key === 'ArrowRight') changeImage(1);
@@ -687,4 +712,5 @@
         });
     </script>
 </body>
+
 </html>
